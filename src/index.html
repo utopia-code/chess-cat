@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Chess Cats</title>
   </head>
-  <body>
-    <div class="uoc-container">
+  <body class="layout-poster">
+    <!-- <div class="uoc-container">
       <picture>
         <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
         <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
@@ -20,7 +20,29 @@
         Program in Web App and Website Development at the Universitat Oberta de
         Catalunya.
       </p>
+    </div> -->
+
+    <!-- 
+
+      La página de portada: debe estar maquetada con CSS Grid
+      navegadores que no soporten CSS Grid, usando @supports
+
+    -->
+
+    <header>
+      <div class="site-logo"><i class="fa-solid fa-shield-cat"></i></div>
+
+      <ul class="nav nav-main">
+        <li>Club</li>
+        <li>Blog</li>
+        <li>Cursos</li>
+      </ul>
+    </header>
+
+    <div class="wrapper">
+      <h1>Chess Cats</h1>
     </div>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
