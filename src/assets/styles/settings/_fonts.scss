@@ -1,11 +1,55 @@
+/* coustard-900 - latin */
 @font-face {
-    font-family: 'Magnetic Pro';
-    font-style: italic;
-    font-weight: 800;
-    src: url('../fonts/MagneticPro/MagneticPro-ExtraBolditalic.eot');
-    src: url('../fonts/MagneticPro/MagneticPro-ExtraBolditalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MagneticPro/MagneticPro-ExtraBolditalic.woff2') format('woff2'),
-        url('../fonts/MagneticPro/MagneticPro-ExtraBolditalic.woff') format('woff'),
-        url('../fonts/MagneticPro/MagneticPro-ExtraBolditalic.ttf') format('truetype');
-    font-display: swap;
+    font-family: 'Coustard';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/Coustard/coustard-v16-latin-900.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Coustard/coustard-v16-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Coustard/coustard-v16-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Coustard/coustard-v16-latin-900.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Coustard/coustard-v16-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Coustard/coustard-v16-latin-900.svg#Coustard') format('svg'); /* Legacy iOS */
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+}
+
+/* mohave-500 - latin */
+@font-face {
+    font-family: 'Mohave';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Mohave/mohave-v8-latin-500.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Mohave/mohave-v8-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Mohave/mohave-v8-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Mohave/mohave-v8-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Mohave/mohave-v8-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Mohave/mohave-v8-latin-500.svg#Mohave') format('svg'); /* Legacy iOS */
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+}
+
+/* encode-sans-semi-condensed-regular - latin */
+@font-face {
+    font-family: 'Encode Sans Semi Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/EncodeSans/encode-sans-semi-condensed-v10-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/EncodeSans/encode-sans-semi-condensed-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/EncodeSans/encode-sans-semi-condensed-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/EncodeSans/encode-sans-semi-condensed-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/EncodeSans/encode-sans-semi-condensed-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/EncodeSans/encode-sans-semi-condensed-v10-latin-regular.svg#EncodeSansSemiCondensed') format('svg'); /* Legacy iOS */
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+}
+  
+  /* encode-sans-semi-condensed-500 - latin */
+  @font-face {
+    font-family: 'Encode Sans Semi Condensed';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/EncodeSans/encode-sans-semi-condensed-v10-latin-500.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/EncodeSans/encode-sans-semi-condensed-v10-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/EncodeSans/encode-sans-semi-condensed-v10-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/EncodeSans/encode-sans-semi-condensed-v10-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/EncodeSans/encode-sans-semi-condensed-v10-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/EncodeSans/encode-sans-semi-condensed-v10-latin-500.svg#EncodeSansSemiCondensed') format('svg'); /* Legacy iOS */
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 }

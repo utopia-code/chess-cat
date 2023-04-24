@@ -1,3 +1,55 @@
+// .poster {
+//     display: grid;
+//     grid-template-columns: 10vw 10vw auto auto auto auto auto 10vw 10vw;
+//     grid-template-rows: 10vw 10vw auto auto auto 10vw 10vw;
+//     position: relative;
 
+//     color: $color-text-on-bg;
+//     text-transform: uppercase;
+// }
 
+// .poster__title {
+//     color: $color-primary;
+//     font-size: calc(3rem + 10vw);
+//     grid-column: 1 / 10;
+//     grid-row: 2 / 3;
+//     text-align: right;
+//     padding-right: 2rem;
+//     margin: 0;
+// }
+
+// .poster__subtitle {
+//     // transform: rotate(-90deg);
+//     // transform-origin: top;
+//     font-size: 3rem;
+// }
+
+// .poster__desc {
+//     text-transform: none;
+    
+// }
+
+// .poster__link {
+    
+// }
+
+// .poster__date {
+    
+// }
+
+// .poster__img {
+//     position: absolute;
+//     grid-column: 1 / 10;
+//     grid-row: 1 / 8;
+    
+//     z-index: -1;
+
+//     img {
+//         max-width: none;
+//         min-height: 100%;
+//         width: 100%;
+//         object-fit: cover;
+//         display: block;
+//     }
+// }
 

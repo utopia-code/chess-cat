@@ -1,22 +1,33 @@
 @use "sass:color";
 
-/* fonts */
+/*------------------------------------*\
+   #FONTS
+\*------------------------------------*/
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Magnetic Pro", serif;
+// $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+//   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+//   "Segoe UI Symbol";
+$font-family-serif: "Coustard", serif;
+$font-family-uppercase: "Mohave", sans-serif;
+$font-family-sans-serif: "Encode Sans Semi Condensed", sans-serif;
 
-/* colors */
+/*------------------------------------*\
+   #COLORS
+\*------------------------------------*/
 
 $color-primary: #06a5ab;
 $color-secondary: #d1df19;
 $color-text: #333;
 $color-text-on-bg: #eee;
-$links-bg: color.scale($color-secondary, $lightness: 50%);
+$color-links: color.scale($color-secondary, $lightness: 50%);
+
+$bg-color-dark: #000;
+$bg-color-white: #fff;
 
 
-/* breakpoints */
+/*------------------------------------*\
+   #BREAKPOINTS
+\*------------------------------------*/
 
 $mq-xs: 450px;
 $mq-s: 767.89px;

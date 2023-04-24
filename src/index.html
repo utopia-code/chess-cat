@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>Chess Cats</title>
-  </head>
-  <body class="layout-poster">
-    <!-- <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC! <i class="fas fa-university"></i></h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div> -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+		<title>Chess Cats</title>
+	</head>
+	<body class="layout-home">
+		<!-- <div class="uoc-container">
+		<picture>
+			<source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
+			<img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
+		</picture>
+		<h1 class="uoc-title">Hello, UOC! <i class="fas fa-university"></i></h1>
+		<p>
+			This is a starter template for the Advanced HTML and CSS Tools courses
+			from the Master's Program in Multimedia Applications and the Master's
+			Program in Web App and Website Development at the Universitat Oberta de
+			Catalunya.
+		</p>
+		</div> -->
 
-    <!-- 
+		<!-- 
 
-      La página de portada: debe estar maquetada con CSS Grid
-      navegadores que no soporten CSS Grid, usando @supports
+		La página de portada: debe estar maquetada con CSS Grid
+		navegadores que no soporten CSS Grid, usando @supports
 
-    -->
+		-->
 
-    <header>
-      <div class="site-logo"><i class="fa-solid fa-shield-cat"></i></div>
+		<include src="./views/header.html"></include>
 
-      <ul class="nav nav-main">
-        <li>Club</li>
-        <li>Blog</li>
-        <li>Cursos</li>
-      </ul>
-    </header>
+		<div class="wrapper">
+		<div class="poster">
+			<h1 class="poster__title">Chess Cats</h1>
+			<div class="poster__subtitle">Community</div>
+			<div class="poster__desc">
+			<p>¡Inscríbete! Sólo por participar, te llevas una camiseta del club. Además podrás ganar hasta 200€ y suscripciones anuales a nuestro club</p>
+			</div>
+			<div class="poster__link">Leer más</div>
+			<div class="poster__date">10.04.2023 Valencia<br>Tinglado 2</div>
+			<div class="poster__img">
+			<picture>
+				<source type="image/avif" srcset="./assets/images/poster/chess-cats-v1.jpg?as=avif">
+				<source type="image/webp" srcset="./assets/images/poster/chess-cats-v1.jpg?as=webp">
+				<source type="image/jpg" srcset="./assets/images/poster/chess-cats-v1.jpg">
+				<img src="./assets/images/poster/chess-cats-v1.jpg" alt="Póster concurso 2023 Chess Cat Club">
+			</picture>
+			</div>
+		</div>
+		</div>
 
-    <div class="wrapper">
-      <h1>Chess Cats</h1>
-    </div>
-
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+		<include src="./views/footer.html"></include>
+		<script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+	</body>
 </html>
