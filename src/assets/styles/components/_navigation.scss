@@ -26,9 +26,9 @@
     float: right;
 
     &:after {
-        content: "";
         display: block;
         clear: both;
+        content: "";
     }
 } 
 
@@ -38,9 +38,9 @@ header .nav__menu {
 
 .nav__menu-item {
     display: table-cell;
-    vertical-align: middle;
     font-size: 2.5rem;
     text-transform: uppercase;
+    vertical-align: middle;
     @include for-size(small-devices) {
         font-size: 2rem;
     }
@@ -72,9 +72,9 @@ header .nav__menu {
         float: left;
 
         &:after {
-            content: "";
             display: block;
             clear: both;
+            content: "";
         }
     }
 
