@@ -1,0 +1,29 @@
+.cards {
+    &:after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+} 
+
+.card {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    text-align: center;
+
+    &:after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+}
+
+.card__title {
+    margin-top: 2.5rem;
+}
+
+.card__desc {
+    margin-bottom: 2.5rem;
+}
+

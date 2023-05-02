@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>Chess Cat</title>
+    <title>Chess Cats</title>
   </head>
   <body>
 
@@ -13,6 +13,16 @@
       - información sobre los miembros del club de ajedrez, maquetada con flex
 
      -->
+    <include src="./views/header.html"></include>
+
+    <article>
+      <h1>Miembros Chess Cats Club</h1>
+      <section class="container container--wrap">
+        <div class="cards cards--members">
+          <include src="./views/member.html"></include>
+        </div>
+      </section>
+    </article>
 
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->

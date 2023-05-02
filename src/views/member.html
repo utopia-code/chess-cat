@@ -1,0 +1,33 @@
+<script type="module" locals>
+    module.exports = {
+        content: [
+
+            ['pexels-pixabay-262391.jpg'],
+            ['pexels-tima-miroshnichenko-8727571.jpg'],
+            ['pexels-moose-photos-1036627.jpg'],
+            ['pexels-christina-morillo-1181519.jpg'],
+            ['pexels-anderson-guerra-1197132.jpg'],
+            ['pexels-daniel-xavier-1212984.jpg'],
+            ['pexels-andrea-piacquadio-3824771.jpg'],
+            ['pexels-christina-morillo-1181690.jpg'],
+            ['pexels-andrea-piacquadio-3755494.jpg'],
+            ['pexels-iiii-iiii-69212.jpg'],
+            ['pexels-andrea-piacquadio-774095.jpg']
+            
+        ]
+    }
+</script>
+
+<each loop="item in content">
+
+    <div class="card">
+        <div class="card__image">
+            <img src="./assets/images/members/{{ item[0] }}" alt="miembro chess cats">
+        </div>
+        <div class="card__content">
+            <h3 class="card__title">Nombre</h3>
+            <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies elit vitae risus posuere posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </div>
+    </div>
+
+</each>
