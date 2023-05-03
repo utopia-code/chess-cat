@@ -52,6 +52,7 @@ body {
             display: grid;
             grid-template-rows: 80px 1fr 80px;
             min-height: 100vh;
+            overflow: hidden;
         
             .wrapper {
                 position: absolute;

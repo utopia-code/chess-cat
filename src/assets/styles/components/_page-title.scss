@@ -1,0 +1,49 @@
+.page-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+  
+    @include for-size(mobile) {
+      height: 240px;
+    }
+  
+    @include for-size(small-devices) {
+      height: 300px;
+    }
+  
+    @include for-size(tablet) {
+      height: 450px;
+    }
+  
+    @include for-size(desktop) {
+      height: 700px;
+    }
+  
+    @include for-size(big-devices) {
+      height: 940px;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content:"";
+        background-color: rgba(0,0,0,.4);
+    }
+}
+
+
+.page-title__img {
+    object-fit: cover;
+    width: 100%;
+    // min-height: 100%;
+}
+
+.page-title__title {
+    position: absolute;
+    width: 100%;
+}

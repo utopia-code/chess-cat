@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>Chess Cat</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+		<title>Chess Cats</title>
+	</head>
+	<body>
 
-    <!-- 
-        - formato de artículo e incluir un mínimo de 4 párrafos de texto y 2 fotografías
-        - aplicar estilos a algunos elementos HTML (blockquote, otros) - ver wireframe
+		<!-- 
+			- formato de artículo e incluir un mínimo de 4 párrafos de texto y 2 fotografías
+			- aplicar estilos a algunos elementos HTML (blockquote, otros) - ver wireframe
 
-     -->
+		-->
 
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+		<include src="./views/header.html"></include>
+
+		<section class="page-title">
+			<picture class="page-title__img">
+				<source type="image/avif" srcset="./assets/images/competition/pexels-nothing-ahead-4576330.jpg?as=avif">
+				<source type="image/webp" srcset="./assets/images/competition/pexels-nothing-ahead-4576330.jpg?as=webp">
+				<source type="image/jpg" srcset="./assets/images/competition/pexels-nothing-ahead-4576330.jpg">
+
+				<img src="./assets/images/competition/pexels-nothing-ahead-4576330.jpg" alt="Concurso ajedrez Chess Cats">
+			</picture>
+			<div class="page-title__title">
+				<h1>Concurso Chess Cats Club</h1>
+			</div>
+		</section>
+		
+		<article>
+			<section class="container container--wrap">
+				
+			</section>
+		</article>
+
+		<include src="./views/footer.html"></include>
+		<script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+	</body>
 </html>
