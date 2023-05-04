@@ -23,6 +23,7 @@ $color-links: color.scale($color-secondary, $lightness: 50%);
 
 $bg-color-dark: #000;
 $bg-color-white: #fff;
+$bg-color: color.scale($color-secondary, $lightness: 80%);
 
 
 /*------------------------------------*\
@@ -34,3 +35,23 @@ $mq-s: 767.89px;
 $mq-m: 991px;
 $mq-lg: 1200px;
 $mq-xl: 1800px;
+
+
+/*------------------------------------*\
+   #BOOPSTRAP
+\*------------------------------------*/
+
+$font-size-base: 1.6rem;
+$spacer: 3rem;
+
+
+/*------------------------------------*\
+   #LIST FONTAWESOME
+\*------------------------------------*/
+
+:root {
+   --fa-li-margin: 2rem;
+   --fa-li-width: 3rem;
+}
+
+

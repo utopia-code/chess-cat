@@ -1,0 +1,43 @@
+<script type="module" locals>
+    module.exports = {
+        card: [
+
+            ['headingOne', 'collapseOne', '1. Pieza tocada', 'PIEZA TOCADA, es pieza movida. PIEZA SOLTADA, no tiene vuelta atrás, ahí se queda.'],
+            ['headingTwo', 'collapseTwo', '2. Jugada ilegal', 'JUGADA ILEGAL, o cualquier problema, discusión o malentendido, hay que llamar al árbitro, deteniendo el reloj. No se discute, se espera al árbitro, que indicará qué procede hacer (amonestar al jugador, dar tiempo en el reloj si hay apuros de tiempo, etc.)'],
+            ['headingThree', 'collapseThree', '3. Comentarios de la partida', 'El árbitro no ve nada de la partida, es cuestión de los jugadores. LOS PADRES, O EL RESTO DE LOS JUGADORES con mayor motivo todavía, no ven nada, absolutamente ningún comentario sobre las partidas en juego, aunque sucedan cosas extrañas o ilegales. La partida es de sus jugadores, ellos deben saber qué hacer.'],
+            ['headingFour', 'collapseFour', '4. Arbitraje', 'El árbitro únicamente intervendrá cuando en una partida exista un comportamiento abusivo de uno de los jugadores, pero en general deben de ser los propios jugadores los que conozcan y reclamen por lo que son sus derechos.'],
+            ['headingFive', 'collapseFive', '5. Jugadas ilegales consecutivas', 'Cuando en una partida se acumule un número elevado de JUGADAS ILEGALES CONSECUTIVAS el árbitro indicará que la partida es tablas.'],
+            ['headingSix', 'collapseSix', '6. Fin partida', 'La partida acaba cuando un jugador DECLARA QUE HA PERDIDO. Sea o no sea mate, cuando se estrechan las manos y un jugador se rinde, es que ha perdido la partida. En este caso, el jugador que ha ganado debe de tener cuidado y reclamar correctamente QUE SU RIVAL SE HA RENDIDO, y no decir que ha dado jaque mate, o que ha ganado sin más, porque el árbitro no comprenderá por qué.'],
+            ['headingSeven', 'collapseSeven', '7. Tablas', 'Es tablas cuando se repiten jugadas, o hay jaque continuo, o hay rey ahogado, o no hay material suficiente para ganar la partida. Se acepta petición de tablas con gran ventaja material pero gran apuro de tiempo.'],
+            ['headingEight', 'collapseEight', '8. Partidas sin reloj', 'n partidas sin reloj en los niveles no competitivos (A y B) que se estén demorando demasiado, el árbitro propondrá persuasivamente a ambos jugadores QUE EMPATEN LA PARTIDA, a su criterio, o bien empleará un reloj de ajedrez para medir el tiempo. En otros torneos se dice que a los quince minutos «manos fuera de la mesa» y se evalúa quién tiene ventaja en cada partida, dándose esta partida por ganada.'],
+            ['headingNine', 'collapseNine', '9. Emparejamientos', 'Los emparejamientos se hacen mediante el SISTEMA SUIZO, que básicamente empareja a jugadores con la misma puntuación, o en caso de ser impares, jugadores con puntuación lo más cercana posible.'],
+            ['headingTen', 'collapseTen', '10. Desempate', 'Los sistemas de desempate que se aplican suelen ser BUCHOLZ o BUCHOLZ sin peor resultado (cuando empareja el ordenador) o bien PROGRESIVO cuando el emparejamiento se hace a mano, siendo el otro sistema el empleado en caso de persistir el empate.'],
+            ['headingEleven', 'collapseEleven', '11. Aceptar las bases', 'Participar en estos torneos supone aceptar las bases de organización del torneo, y aceptar las decisiones que el árbitro y la organización tienen que tomar por motivo de cualquier contratiempo o situación no prevista que se presenta en numerosas ocasiones, de forma que hay que cambiar alguna condición previamente establecida, como el número de rondas, categorías en juego, etc.']
+            
+        ]
+    }
+</script>
+
+<each loop="item in card">
+
+    <div class="card">
+        <div class="card-header" id="{{ item[0] }}">
+            <button 
+                class="btn btn-link" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#{{ item[1] }}" 
+                aria-expanded="false" 
+                aria-controls="{{ item[1] }}">
+                {{ item[2] }}
+            </button>
+        </div>
+        <div id="{{ item[1] }}" class="collapse" aria-labelledby="{{ item[0] }}" data-parent="#accordion">
+            <div class="card-body">
+                {{ item[3] }}
+            </div>
+        </div>
+        </div>
+    </div>
+
+</each>
+

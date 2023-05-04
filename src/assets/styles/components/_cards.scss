@@ -1,4 +1,4 @@
-.cards {
+.media-cards {
     &:after {
         display: block;
         clear: both;
@@ -6,7 +6,7 @@
     }
 } 
 
-.card {
+.media-card {
     float: left;
     width: 50%;
     padding: 20px;
@@ -27,16 +27,16 @@
     }
 }
 
-.card__title {
+.media-card__title {
     margin-top: 2.5rem;
 }
 
-.card__desc {
+.media-card__desc {
     margin-bottom: 2.5rem;
 }
 
 @supports (display: flex) {
-    .cards {
+    .media-cards {
         display: flex;
         flex-wrap: wrap;
     }
