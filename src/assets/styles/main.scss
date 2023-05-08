@@ -3,12 +3,6 @@
  * Do not include SCSS code in this file.
  */
 
-/**
- * Import variables
- */
-
-@import "settings/fonts";
-@import "settings/variables";
 
 /**
  * Import npm dependencies
@@ -21,6 +15,15 @@
 
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
 @import "bootstrap/scss/bootstrap";
+
+
+/**
+ * Import variables
+ */
+
+ @import "settings/fonts";
+ @import "settings/variables";
+
 
 /**
  * Import layouts
