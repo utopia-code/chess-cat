@@ -6,21 +6,30 @@
     background-color: $bg-color-dark;
 }
 
-// eliminar despues del icon
-
 .nav__link {
     color: $color-text-on-bg;
 }
 
 .nav__logo {
     display: inline-block;
-    margin: 1rem 0;
+    
+    @include for-size(tablet) {
+        margin: 1rem 0;
+    }
+}
 
-    .fas, .fa-solid {
-        font-size: 6rem;
+.nav__link--logo {
+    width: 4rem;
+    height: 6rem;
 
-        @include for-size(small-devices) {
-            font-size: 4rem;
+    @include for-size(tablet) {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    &:hover {
+        rect {
+            fill: $color-primary;
         }
     }
 }
@@ -166,6 +175,7 @@ header .nav__menu {
     }
 }
 
+
 /*-----------------------------------------------*\
    #LINKS NAVIGATION HOME AND SOCIAL ICONS FOOTER
 \*-----------------------------------------------*/
@@ -175,6 +185,7 @@ header .nav__menu {
 .nav--footer .nav__menu:last-child .nav__link {
     height: auto;
     transition: color .2s ease;
+
     &:hover, &.nav__link--active  {
         color: $color-secondary;
         background-color: transparent;

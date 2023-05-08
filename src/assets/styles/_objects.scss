@@ -1,6 +1,16 @@
+.box__icon {
+    .fas, .fa-solid {
+        margin-bottom: 2rem;
+        font-size: 5rem;
+        color: $color-primary;
+    }
+}
+
 /*------------------------------------*\
    #BOOPSTRAP
 \*------------------------------------*/
+
+/* buttons */
 
 .btn-primary {
     @include button-variant(
@@ -16,13 +26,7 @@
     )
 }
 
-.box__icon {
-    .fas, .fa-solid {
-        margin-bottom: 2rem;
-        font-size: 5rem;
-        color: $color-primary;
-    }
-}
+/* table component */
 
 .caption-top {
     padding: 2rem 1rem;

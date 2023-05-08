@@ -7,7 +7,7 @@
 // import SomeModule from 'some-node-module';
 
 
-import { Collapse as Collapse, Carousel as Carousel } from 'bootstrap';
+import { Collapse as Collapse } from 'bootstrap';
 
 /**
  * Write any other JavaScript below
@@ -21,13 +21,10 @@ import { Collapse as Collapse, Carousel as Carousel } from 'bootstrap';
   var menuItems = document.querySelectorAll('.js-nav__link');
   
   if (current === "") {
-      menuItems[0].classList.add('nav__link--active')
+      menuItems[3].classList.add('nav__link--active')
       return;
   }
-  // if (current === "museum.html") {
-  //     menuItems[1].classList.add('is-active')
-  //     return;
-  // }
+
   for (var i = 0, l = menuItems.length; i < l; i++) {
       if (menuItems[i].getAttribute('href').indexOf(current) !== -1) {
           menuItems[i].classList.add('nav__link--active');
