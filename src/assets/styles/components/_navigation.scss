@@ -22,6 +22,10 @@
     width: 4rem;
     height: 6rem;
 
+    rect {
+        transition: .2s ease;
+    }
+
     @include for-size(tablet) {
         width: 6rem;
         height: 6rem;
