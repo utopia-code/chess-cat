@@ -1,6 +1,6 @@
 <script type="module" locals>
     module.exports = {
-        card: [
+        accordion: [
 
             ['headingOne', 'collapseOne', '1. Pieza tocada', 'PIEZA TOCADA, es pieza movida. PIEZA SOLTADA, no tiene vuelta atrás, ahí se queda.'],
             ['headingTwo', 'collapseTwo', '2. Jugada ilegal', 'JUGADA ILEGAL, o cualquier problema, discusión o malentendido, hay que llamar al árbitro, deteniendo el reloj. No se discute, se espera al árbitro, que indicará qué procede hacer (amonestar al jugador, dar tiempo en el reloj si hay apuros de tiempo, etc.)'],
@@ -18,12 +18,13 @@
     }
 </script>
 
-<each loop="item in card">
+<each loop="item in accordion">
 
-    <div class="card">
-        <div class="card-header" id="{{ item[0] }}">
+    <div class="accordion-item">
+        <div class="accordion-header" id="{{ item[0] }}">
             <button 
-                class="btn btn-link" 
+                class="accordion-button" 
+                type="button"
                 data-bs-toggle="collapse" 
                 data-bs-target="#{{ item[1] }}" 
                 aria-expanded="false" 
@@ -31,8 +32,8 @@
                 {{ item[2] }}
             </button>
         </div>
-        <div id="{{ item[1] }}" class="collapse" aria-labelledby="{{ item[0] }}" data-parent="#accordion">
-            <div class="card-body">
+        <div id="{{ item[1] }}" class="accordion-collapse collapse" aria-labelledby="{{ item[0] }}" data-bs-parent="#accordion">
+            <div class="accordion-body">
                 {{ item[3] }}
             </div>
         </div>

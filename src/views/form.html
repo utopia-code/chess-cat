@@ -1,0 +1,41 @@
+<form class="row g-3">
+
+    <div class="input-group">
+        <span class="input-group-text">Nombre / Apellidos</span>
+        <input type="text" aria-label="Nombre" class="form-control" required>
+        <input type="text" aria-label="Apellidos" class="form-control" required>
+    </div>
+
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="email" aria-label="email" required>
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="ejemplo.com" aria-label="ejemplo.com" required>
+    </div>
+
+    <div class="input-group">
+        <select class="form-select" aria-label="Elige tú nivel" required>
+            <option selected>Elige el nivel en el que vas a participar</option>
+            <option value="1">Básico</option>
+            <option value="2">Medio</option>
+            <option value="3">Avanzado</option>
+            <option value="3">Experto</option>
+        </select>
+    </div>
+    
+   <div class="input-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="legalAccept" required>
+            <label class="form-check-label" for="legalAccept">
+            Acepto los términos y condiciones
+            </label>
+        </div>
+   </div>
+
+    
+
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+    
+</form>
+  

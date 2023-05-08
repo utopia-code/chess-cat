@@ -8,7 +8,7 @@
     grid-column: 2 / -1;
     margin-bottom: 3rem;
 
-    &.accordion {
+    &.accordion, &.form {
         grid-column: 1 / -1;
     }
 }
@@ -50,7 +50,7 @@
     .layout-grid > div {
         grid-column: 2 / -2;
 
-        &.accordion {
+        &.accordion, &.form {
             grid-column: 2 / -2;
         }
     }

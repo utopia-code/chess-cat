@@ -110,7 +110,7 @@ header .nav__menu {
             font-size: 1.7rem;
         }
     
-        .nav__menu:first-of-type {
+        .nav__menu {
             .nav__link {
                 padding-right: .5rem;
                 padding-left: .5rem;
@@ -120,7 +120,7 @@ header .nav__menu {
 
     @include for-size(mobile) {
         .nav__menu-item {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
 
         .nav__menu:first-of-type {

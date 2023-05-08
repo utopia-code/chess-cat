@@ -7,6 +7,7 @@
 // $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 //   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
 //   "Segoe UI Symbol";
+
 $font-family-serif: "Coustard", serif;
 $font-family-uppercase: "Mohave", sans-serif;
 $font-family-sans-serif: "Encode Sans Semi Condensed", sans-serif;
@@ -41,8 +42,59 @@ $mq-xl: 1800px;
    #BOOPSTRAP
 \*------------------------------------*/
 
+// theme colors
+
+$primary: $color-primary;
+$secondary: $color-secondary;
+
+// font-size base
+
 $font-size-base: 1.6rem;
+
+// distance base
+
 $spacer: 3rem;
+
+// buttons
+
+$btn-border-radius: 0;
+
+// form input
+
+$input-border-radius: 0;
+$input-focus-bg: transparent;
+$input-focus-border-color: none;
+$input-focus-box-shadow: none;
+
+// form select
+
+$form-select-focus-border-color: none;
+$form-select-focus-box-shadow: none;
+$form-select-bg-size: 20px 16px;
+$form-select-indicator-color: $color-primary;
+
+// form check
+
+$form-check-input-width: 1.6em;
+$form-check-input-border-radius: 0;
+$form-check-input-focus-border: none;
+$form-check-input-focus-box-shadow: none;
+
+// accordion
+
+$accordion-color: $color-text;
+$accordion-bg: $bg-color-white;
+$accordion-button-color: $color-text-on-bg;
+$accordion-button-bg: $bg-color-dark;
+$accordion-button-active-bg: $color-secondary;
+$accordion-button-active-color: $color-text;
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-color: $color-text-on-bg;
+$accordion-border-radius: 0;
+
+
+// https://github.com/twbs/bootstrap/blob/v5.3.0-alpha3/scss/_variables.scss
 
 
 /*------------------------------------*\
