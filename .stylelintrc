@@ -20,6 +20,7 @@
     "max-nesting-depth": 3,
     "alpha-value-notation": "number",
     "font-weight-notation": "numeric",
-    "shorthand-property-no-redundant-values": true
+    "shorthand-property-no-redundant-values": true,
+    "scss/no-global-function-names": null
   }
 }

@@ -46,15 +46,12 @@ $mq-xl: 1800px;
 
 /* theme colors */
 
-$primary: $color-primary;
-$secondary: $color-secondary;
+$theme-colors: (
+   'primary': $color-primary,
+   'secondary': $color-secondary
+);
 
-// $theme-colors: (
-//    'primary': $color-primary,
-//    'secondary': $color-secondary
-// );
-
-// $theme-colors: map-merge($theme-colors, $theme-colors);
+$theme-colors: map-merge($theme-colors, $theme-colors);
 
 /* font-size base */
 
