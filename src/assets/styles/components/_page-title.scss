@@ -5,14 +5,6 @@
     margin: 0;
     overflow: hidden;
   
-    @include for-size(mobile) {
-      height: 240px;
-    }
-  
-    @include for-size(small-devices) {
-      height: 30rem;
-    }
-  
     @include for-size(tablet) {
       height: 45rem;
     }
@@ -28,6 +20,14 @@
     @include for-size(big-devices) {
       height: 70rem;
     }
+    
+    @include for-size(small-devices) {
+      height: 30rem;
+    }
+
+    @include for-size(mobile) {
+      height: 24rem;
+    }
 
     &::before {
         position: absolute;
@@ -35,8 +35,10 @@
         right: 0;
         bottom: 0;
         left: 0;
+        z-index: 1;
         content:"";
-        background-color: rgba(0,0,0,.4);
+        background-color: rgba(0,0,0,.3);
+        // background-color: rgba($color-primary, .3); set color page-title
     }
 }
 
@@ -53,5 +55,10 @@
 
 .page-title__title {
     position: absolute;
+    z-index: 100;
     width: 100%;
+
+    h1 {
+      color: $color-text-on-bg;
+    }
 }

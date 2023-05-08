@@ -1,21 +1,6 @@
-
-:root {
-    --color-primary: #06a5ab;
-    --color-secondary: #d1df19;
-}
-
-a:hover {
-    --bs-link-hover-color: var(--color-primary);
-}
-
-.blockquote {
-    font-size: 2.2rem;
-}
-
-.blockquote-footer {
-    margin-top: -1.6rem;
-}
-
+/*------------------------------------*\
+   #FONTAWESOME
+\*------------------------------------*/
 
 .fa-li {
     line-height: 1.2;
@@ -25,26 +10,20 @@ a:hover {
    #BOOPSTRAP
 \*------------------------------------*/
 
+.blockquote {
+    font-size: 2.2rem;
+}
+
+.blockquote-footer {
+    margin-top: -1.6rem;
+}
+
 .input-group-text {
     color: $color-text-on-bg;
     background-color: $bg-color-dark;
     border: none;
 }
 
-.btn-primary {
-    @include button-variant(
-        $background: $bg-color-white,
-        $border: $color-primary,
-        $color: $color-text,
-        $hover-background: $color-primary,
-        $hover-border: $color-primary,
-        $hover-color: $color-text-on-bg,
-        $active-background: $color-primary,
-        $active-border: $color-primary,
-        $active-color: $color-text
-    )
-}
-
-.form .button {
+.form .btn {
     width: 100%;
 }

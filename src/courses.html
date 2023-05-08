@@ -1,21 +1,135 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>Chess Cat</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+		<title>Cursos Chess Cats Club</title>
+	</head>
+	<body>
 
-    <!-- 
-        - página libre
-        - curso / trucos
+		<!-- 
+			- página libre
+			- curso / trucos
 
-     -->
+		-->
+		<include src="./views/header.html"></include>
 
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+		<section class="page-title">
+			<picture class="page-title__img">
+				<source type="image/avif" srcset="./assets/images/courses/shutterstock_294201554.jpg?as=avif">
+				<source type="image/webp" srcset="./assets/images/courses/shutterstock_294201554.jpg?as=webp">
+				<source type="image/jpg" srcset="./assets/images/courses/shutterstock_294201554.jpg">
+
+				<img src="./assets/images/courses/shutterstock_294201554.jpg" alt="Torneo ajedrez Chess Cats">
+			</picture>
+			<div class="page-title__title">
+				<h1>Cursos Chess Cats Club</h1>
+			</div>
+		</section>
+
+		<article>
+
+			<section class="container container--wrap mb-4">
+				<h2 class="text-center mb-4">Grupos de aprendizaje</h2>
+				<div class="row">
+					<include src="./views/groups.html"></include>
+				</div>
+			</section>
+
+			<section class="container container--wrap mb-5">
+				<h2 class="text-center mb-3">Tarifas Chess Cats Club</h2>
+				<div class="row">
+					<include src="./views/cards.html"></include>
+				</div>
+			</section>
+
+			<section class="container container--wrap mb-5">
+				<h2 class="text-center mb-4">Horarios de las clases</h2>
+				<table class="table">
+					<caption class="caption-top">Lunes / Miercoles / Viernes</caption>
+					<thead class="table-dark">
+						<tr>
+							<th scope="col">Horarios</th>
+							<th scope="col">AULA 1</th>
+							<th scope="col">AULA 2</th>
+						</tr>
+					</thead>
+					<tbody class="table-group-divider">
+						<tr>
+							<td>11:00 - 12:00</td>
+							<td>Iniciación</td>
+							<td>Básico</td>
+						</tr>
+						<tr>
+							<td>12:00 - 13:00</td>
+							<td>Básico</td>
+							<td>Iniciación</td>
+						</tr>
+						<tr>
+							<td>17:00 - 18:00</td>
+							<td>Avanzado</td>
+							<td>Experto</td>
+						</tr>
+						<tr>
+							<td>18:00 - 19:00</td>
+							<td>Experto</td>
+							<td>Avanzado</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="table">
+					<caption class="caption-top">Martes / Jueves</caption>
+					<thead class="table-dark">
+						<tr>
+							<th scope="col">Horarios</th>
+							<th scope="col">AULA 1</th>
+							<th scope="col">AULA 2</th>
+						</tr>
+					</thead>
+					<tbody class="table-group-divider">
+						<tr>
+							<td>17:00 - 18:00</td>
+							<td>Básico</td>
+							<td>Experto</td>
+						</tr>
+						<tr>
+							<td>18:00 - 19:00</td>
+							<td>Iniciación</td>
+							<td>Avanzado</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="table">
+					<caption class="caption-top">Sábados</caption>
+					<thead class="table-dark">
+						<tr>
+							<th scope="col">Horarios</th>
+							<th scope="col">AULA 1</th>
+							<th scope="col">AULA 2</th>
+						</tr>
+					</thead>
+					<tbody class="table-group-divider">
+						<tr>
+							<td>11:00 - 12:00</td>
+							<td>Iniciación</td>
+							<td>Avanzado</td>
+						</tr>
+						<tr>
+							<td>12:00 - 13:00</td>
+							<td>Básico</td>
+							<td>Experto</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+		</article>
+
+		<include src="./views/footer.html"></include>
+		<script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+	</body>
 </html>

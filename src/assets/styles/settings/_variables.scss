@@ -25,13 +25,14 @@ $color-links: color.scale($color-secondary, $lightness: 50%);
 $bg-color-dark: #000;
 $bg-color-white: #fff;
 $bg-color: color.scale($color-secondary, $lightness: 80%);
+$bg-color-page-title: color.scale($color-primary, $lightness: 80%);
 
 
 /*------------------------------------*\
    #BREAKPOINTS
 \*------------------------------------*/
 
-$mq-xs: 450px;
+$mq-xs: 500px;
 $mq-s: 767.89px;
 $mq-m: 991px;
 $mq-lg: 1200px;
@@ -42,45 +43,46 @@ $mq-xl: 1800px;
    #BOOPSTRAP
 \*------------------------------------*/
 
-// theme colors
+/* theme colors */
 
 $primary: $color-primary;
 $secondary: $color-secondary;
 
-// font-size base
+/* font-size base */
 
 $font-size-base: 1.6rem;
 
-// distance base
+/* distance base */
 
 $spacer: 3rem;
+ 
+/* buttons */
 
-// buttons
-
+$btn-border-width: 2px;
 $btn-border-radius: 0;
 
-// form input
+/* input form component */
 
 $input-border-radius: 0;
 $input-focus-bg: transparent;
 $input-focus-border-color: none;
 $input-focus-box-shadow: none;
 
-// form select
+/* select form component */
 
 $form-select-focus-border-color: none;
 $form-select-focus-box-shadow: none;
 $form-select-bg-size: 20px 16px;
 $form-select-indicator-color: $color-primary;
 
-// form check
+/* check form component */
 
 $form-check-input-width: 1.6em;
 $form-check-input-border-radius: 0;
 $form-check-input-focus-border: none;
 $form-check-input-focus-box-shadow: none;
 
-// accordion
+/* accordion component */
 
 $accordion-color: $color-text;
 $accordion-bg: $bg-color-white;
@@ -93,8 +95,15 @@ $accordion-button-focus-box-shadow: none;
 $accordion-icon-color: $color-text-on-bg;
 $accordion-border-radius: 0;
 
+/* cards component */
 
-// https://github.com/twbs/bootstrap/blob/v5.3.0-alpha3/scss/_variables.scss
+$card-cap-bg: $bg-color-dark;
+$card-cap-color: $color-text-on-bg;
+$card-border-color: $bg-color-dark;
+$card-border-radius: 0;
+
+
+/* https://github.com/twbs/bootstrap/blob/v5.3.0-alpha3/scss/_variables.scss */
 
 
 /*------------------------------------*\

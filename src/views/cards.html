@@ -1,0 +1,48 @@
+<script type="module" locals>
+    module.exports = {
+        cards: [
+
+            [
+                'Mensual',
+                '1 hora de clase a la semana durante 4 semanas y cuota del Club incluida',
+                '39',
+                'Mensual',
+                'aprende de forma constante cada mes'
+            ],
+            [
+                'Trimestral',
+                '1 hora de clase a la semana durante 3 meses y cuota de Club incluida',
+                '110',
+                'Trimestral',
+                'Asegúrate tu plaza y mueve pieza'
+            ],
+            [
+                'Anual',
+                '1 hora de clase a la semana durante 12 meses y cuota de Club incluida',
+                '370',
+                'Trimestral',
+                'Cumple tus objetivos de aprendizaje'
+            ]
+            
+        ]
+    }
+</script>
+
+<each loop="item in cards">
+
+    <div class="col-12 col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h3>{{ item[0] }}<span class="card-header__subtitle">{{ item[1] }}</span></h3>
+            </div>
+            <div class="card-body">
+                <p class="card-title"><span class="card-title__price"><span class="card-title__price--currency">€</span>{{ item[2] }}</span><span class="card-title__caption">{{ item[3] }}</span></p>
+                <p class="card-text">{{ item[4] }}</p>
+                <a href="#" class="btn btn-primary mt-3">Quiero apuntarme</a>
+            </div>
+        </div>
+    </div>
+
+</each>
+
+

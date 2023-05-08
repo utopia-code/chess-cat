@@ -58,7 +58,7 @@ header .nav__menu {
     padding-left: 1rem;
     background-color: transparent;
     transition: background-color .2s ease, color .2s ease;
-    &:hover {
+    &:hover, &.nav__link--active {
         color: $color-text;
         background-color: $color-secondary;
     }
@@ -175,7 +175,7 @@ header .nav__menu {
 .nav--footer .nav__menu:last-child .nav__link {
     height: auto;
     transition: color .2s ease;
-    &:hover {
+    &:hover, &.nav__link--active  {
         color: $color-secondary;
         background-color: transparent;
     }

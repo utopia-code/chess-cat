@@ -2,17 +2,61 @@
     module.exports = {
         content: [
 
-            ['pexels-pixabay-262391.jpg'],
-            ['pexels-tima-miroshnichenko-8727571.jpg'],
-            ['pexels-moose-photos-1036627.jpg'],
-            ['pexels-christina-morillo-1181519.jpg'],
-            ['pexels-anderson-guerra-1197132.jpg'],
-            ['pexels-daniel-xavier-1212984.jpg'],
-            ['pexels-andrea-piacquadio-3824771.jpg'],
-            ['pexels-christina-morillo-1181690.jpg'],
-            ['pexels-andrea-piacquadio-3755494.jpg'],
-            ['pexels-iiii-iiii-69212.jpg'],
-            ['pexels-andrea-piacquadio-774095.jpg']
+            [
+                'pexels-pixabay-262391.jpg', 
+                'Celso Asensio',
+                'queen'
+            ],
+            [
+                'pexels-tima-miroshnichenko-8727571.jpg',
+                'Herminia Arcos',
+                'rook'
+            ],
+            [
+                'pexels-moose-photos-1036627.jpg',
+                'Daniel Espinosa',
+                'knight'
+            ],
+            [
+                'pexels-christina-morillo-1181519.jpg',
+                'Ariadna Paredes-Verdejo',
+                'queen'
+            ],
+            [
+                'pexels-anderson-guerra-1197132.jpg',
+                'Esperanza Cabo',
+                'knight'
+            ],
+            [
+                'pexels-daniel-xavier-1212984.jpg',
+                'Felipe Girona',
+                'rook'
+            ],
+            [
+                'pexels-andrea-piacquadio-3824771.jpg',
+                'Rosendo Anguita',
+                'pawn'
+            ],
+            [
+                'pexels-christina-morillo-1181690.jpg',
+                'Flor Zamorano',
+                'rook'
+            ],
+            [
+                'pexels-andrea-piacquadio-3755494.jpg',
+                'Cloe Roldan',
+                'pawn'
+            ],
+            [
+                'pexels-iiii-iiii-69212.jpg',
+                'Efraín Carrasco',
+                'knight'
+            ],
+            [
+                'pexels-andrea-piacquadio-774095.jpg',
+                'Zoraida Cabello',
+                'queen'
+            ]
             
         ]
     }
@@ -22,10 +66,17 @@
 
     <div class="media-card">
         <div class="media-card__image">
-            <img src="./assets/images/members/{{ item[0] }}" alt="miembro chess cats">
+            <div class="media-card__icon"><i class="fa-solid fa-chess-{{ item[2] }}"></i></div>
+            <picture class="page-title__img">
+				<source type="image/avif" srcset="./assets/images/members/{{ item[0] }}?as=avif">
+				<source type="image/webp" srcset="./assets/images/members/{{ item[0] }}?as=webp">
+				<source type="image/jpg" srcset="./assets/images/members/{{ item[0] }}">
+
+				<img src="./assets/images/members/{{ item[0] }}" alt="miembro chess cats">
+			</picture>
         </div>
         <div class="media-card__content">
-            <h3 class="media-card__title">Nombre</h3>
+            <h3 class="media-card__title">{{ item[1] }}</h3>
             <p class="media-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies elit vitae risus posuere posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
         </div>
     </div>
