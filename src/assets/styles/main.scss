@@ -8,8 +8,7 @@
  * Import variables
  */
 
- @import "settings/fonts";
- @import "settings/variables";
+ @import "settings";
 
 /**
  * Import npm dependencies
@@ -29,11 +28,12 @@
  * It's a best practice to use a different partial for each page
  */
 
+
 @import "tools";
 @import "generic";
 @import "elements";
 @import "objects";
-@import "components/components";
+@import "components";
 @import "utilities";
 
 /**
