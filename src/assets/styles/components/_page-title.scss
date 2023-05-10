@@ -6,27 +6,27 @@
     overflow: hidden;
   
     @include for-size(tablet) {
-      height: 45rem;
+      	height: 45rem;
     }
 
     @include for-size(m-devices) {
-      height: 55rem;
+      	height: 55rem;
     }
   
     @include for-size(desktop) {
-      height: 60rem;
+      	height: 60rem;
     }
 
     @include for-size(big-devices) {
-      height: 70rem;
+      	height: 70rem;
     }
     
     @include for-size(small-devices) {
-      height: 30rem;
+      	height: 30rem;
     }
 
     @include for-size(mobile) {
-      height: 24rem;
+      	height: 24rem;
     }
 
     &::after {
@@ -46,8 +46,8 @@
     width: 100%;
     
     img {
-      width: 100%;
-      max-width: none;
+		width: 100%;
+		max-width: none;
     }
 }
 
@@ -57,6 +57,6 @@
     width: 100%;
 
     h1 {
-      color: $color-text-on-bg;
+      	color: $color-text-on-bg;
     }
 }
